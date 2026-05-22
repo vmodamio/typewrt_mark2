@@ -1,0 +1,4 @@
+[submodule "firmware/esp"]
+	path = firmware/esp
+	url = https://github.com/vmodamio/typewrt_esp.git
+	branch = nextvi
