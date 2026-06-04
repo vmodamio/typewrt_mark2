@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "amphenol_usb")(type "KiCad")(uri "${KIPRJMOD}/amphenol_usb.kicad_sym")(options "")(descr ""))
+  (lib (name "MUSBRM1C1M0")(type "KiCad")(uri "/home/vik/typewriter/typewriter_V2/usb_connector/MUSBRM1C1M0.kicad_sym")(options "")(descr ""))
+)

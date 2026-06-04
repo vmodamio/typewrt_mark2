@@ -1,0 +1,5 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,PARTREV,STANDARD,MAXIMUM_PACKAGE_HEIGHT,MANUFACTURER,Description
+J1,1,MUSBRM1C1M0,AMPHENOL_MUSBRM1C1M0_no_courtyard,,,,tht,D,Manufacturer Recommendation,9.05mm,Amphenol,
+J2,1,Conn_01x04_Pin,PinHeader_1x04_P1.27mm_Vertical,,,,tht,,,,,"Generic connector, single row, 01x04, script generated"
+JP1,1,Jumper_2_Open,PinHeader_1x02_P1.27mm_Vertical,,,,tht,,,,,"Jumper, 2-pole, open"
+"R1, R2",2,5k7,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,,,,smt,,,,,Resistor

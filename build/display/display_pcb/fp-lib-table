@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "sharp_connector")(type "KiCad")(uri "${KIPRJMOD}/sharp_connector.pretty")(options "")(descr ""))
+  (lib (name "renesas_7555")(type "KiCad")(uri "${KIPRJMOD}/renesas_7555.pretty")(options "")(descr ""))
+)

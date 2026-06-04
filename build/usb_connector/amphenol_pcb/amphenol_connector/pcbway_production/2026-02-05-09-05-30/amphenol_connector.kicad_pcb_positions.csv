@@ -1,0 +1,6 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+148.85,-88.4,0.0,top,J1,,,AMPHENOL_MUSBRM1C1M0_no_courtyard,MUSBRM1C1M0,tht
+148.96,-93.17,90.0,top,J2,,,PinHeader_1x04_P1.27mm_Vertical,Conn_01x04_Pin,tht
+144.89,-93.17,90.0,top,JP1,,,PinHeader_1x02_P1.27mm_Vertical,Jumper_2_Open,tht
+156.86,-93.24,0.0,top,R1,,,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,5k7,smt
+140.82,-93.12,0.0,top,R2,,,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,5k7,smt

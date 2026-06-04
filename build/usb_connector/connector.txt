@@ -1,0 +1,20 @@
+GlobTek JACK-USBC-6STM-2SL
+Super easy and small, with flange mounting....
+Only thing is: the 6 pins are redundant 3: GND, VCC and CC
+So no data lines!!
+That could actually be positive, so no one could just plug the 
+machine and start messing with the system.
+Only problem is that, to program it, I would need to 
+disassemble the lid and conenct a proper USB cable.
+
+NOTE: The connector has eff. 3 pins. VDD, GND and CC. 
+But the other end connector( to the board) would probably
+have 4 connectors: VDD, GND, and D+ D-, with a small 
+resistor for the CC lines....
+
+
+So basically, if the connector to the board is having already the 
+CC resistors in place, I would only need to connect two 
+cables: VCC and GND.
+
+

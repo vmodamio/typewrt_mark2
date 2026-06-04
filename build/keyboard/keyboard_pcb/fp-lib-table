@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MX_Solderable")(type "KiCad")(uri "/home/vik/typewriter/typewriter_V2/keyboard/MX_V2/MX_Solderable.pretty")(options "")(descr ""))
+)

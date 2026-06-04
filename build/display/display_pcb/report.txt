@@ -1,0 +1,11 @@
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-F_Cu.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-B_Cu.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-F_Paste.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-B_Paste.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-F_Silkscreen.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-B_Silkscreen.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-F_Mask.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-B_Mask.gbr'.
+Plotted to '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-Edge_Cuts.gbr'.
+Created Gerber job file '/home/vik/typewriter/display/pcb/Sharp_display/Sharp_display-job.gbrjob'.
+Info: Done.

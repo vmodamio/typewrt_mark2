@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "amphenol_connector")(type "KiCad")(uri "/home/vik/typewriter/typewriter_V2/usb_connector/amphenol_pcb/amphenol_connector.pretty")(options "")(descr ""))
+)

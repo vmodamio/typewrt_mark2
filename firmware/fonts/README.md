@@ -18,3 +18,15 @@ either version 3 or (at your option) any later version.
 This font package is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+
+The font used for the splash screen is MomoTrustDisplay-Regular.ttf
+Designed by Type Associates, 
+
+Copyright 2024 The MoMo Trust Display Project Authors
+(https://github.com/typeassociates/MomoTrustDisplay) This Font Software is
+licensed under the SIL Open Font License, Version 1.1 . This license is copied
+below, and is also available with a FAQ at: https://openfontlicense.org
+
+
+
