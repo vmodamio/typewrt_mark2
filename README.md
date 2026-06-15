@@ -25,38 +25,58 @@ board.
 a simple drafting device. Typewrt is an embedded vi text editor. It allows to
 navigate through the document or documents very efficiently. Manipulate text
 with any complexity, and recursively. Do search and replace, etc. You can even
-autocomplete words, or perform fuzzy searches. 
+autocomplete words, or perform fuzzy searches. It works natively with utf-8
+encoding, and it can change the keyboard layout on the fly to english, spanish,
+italian, french, german, norwegian, turkish and colemak.
 5) Ergonomics: The design is meant to be robust and stable. The keyboard height
-has been minimized. The display distance and viewing angle is kept large enough
-to allow long writing sessions. The keyboard has been silenced as much as
-possible, so you have a good peace of mind when typing in public places.
-The tactility and response of the keyboard is very conforting. 
+has been minimized. Cherry profile keycups are used, and the keyboard plane is
+tilted by 6 degree.  The display distance and viewing angle is kept large
+enough to allow long writing sessions. The display is 35 degree respect to the 
+horizontal plane. The keyboard has been silenced as much as possible, so you
+have a good peace of mind when typing in public places.  The tactility and
+response of the keyboard is very conforting. 
 6) Remote sync: The device has LE Bluetooth and allows to copy your files to
-your phone consuming very little, and without needing external networks.
+your phone consuming very little power, and without needing external networks.
 
-A display that
-doesn't produce light or stress your eyes. That works wonderfully on daylight.
-A keyboard that exerts mechanical precission and invites to type in. An ultra
-low power device that lets you write continuosly for more than two weeks, or
-that would hold idle for almost half a year. Typewrt powers on instant into
-a blank document. Ready to type. The display doesn't have any lag. Keyboard,
-display and processor work all together to produce a fast, responsive and
-reliable experience. Without even noticing you are typing on an electronic
-device.   Even though, Typewrt lets you transfer your files with Bluetooth to
-your phone. That means, you can have a full copy of your text in the phone
-without recurring into networks.  A small app in the phone let you commit your
-changes into a git repository. A very convenient, fast and secure way of having
-your text back up, and allowing you to revert or review changes easily. 
+The main difference of Typewrt mark II respect to the first iteration is the
+hardware. Typewrt-I was built with a single-board-computer, running a ARM based 
+linux from which you could run any program on the terminal. 
+Typewrt-II doesn't have a computer. There is no terminal or specific drivers for
+the keyboard or the display. Keyboard, display and text processor conform a
+unique firmware embedded into a ESP32S3 microprocessor. 
+Just one application (a modified vi editor with a simple file browser), running 
+in a much more constrained environment. 8 MB of ram memory instead of 0.5 GB in
+Typewrt-I. 1 MB firmware on flash memory instead of 0.5GB of linux distribution. 
+And still, it performs faster, and consumes much less power. 
+The interaction with Typewrt-2 is straight. There is no loggins or shells or
+passwords. You press the power button and start writing instant on a blank 
+document.
 
-Now, the core of Typewrt is the text editor. It is an embedded version of the
-vi clone nextvi. In addition to the powerful editing capabilities, it supports
-utf8, and allows to change the language layout on the fly. 
+![hardware](images/PXL_20260515_160559986.jpg)
+# Hardware:
+The machine consists on a feather ESP32s3[d] (unexpected maker) and an Adafruit
+adalogger RTC+SD card. The Sharp MIP 4.4" display, is mounted in a custom PCB
+that has a 5V booster, and a 7555 timer for the vcom signal (both ultra low
+power). The keyboard pcb consists barely on an octal latch SN74HC573A that
+drives 8 inputs/outputs. In addition, a power button and a yellow led on the 
+enclosure, and a usb-c connector on the back. For the connector, a tiny pcb was
+made to pull down the CC1 and CC2 lines with 5.1k. It has also a small jumper to
+remove the data lines, in case you dont want someone touching your firmware. 
 
-Maybe one of the features I like most is the simplicity. There is no unnecesary
-clutter. No shell, no loggings, no passwords, no such a thing like entering in
-the editor program. The machine is itself the editor program, and nothing else.
-It just lets you, write. There is just one single thing you can do with this
-machine.
+# Power figures:
+Typewrt main display, the SHARP MIP, consumes 50 uA when idle, and 600 uA when
+refreshing. It is probably the lowest power display ever. This, considering
+that, in many writing divices, the display is by far the most power hungry part.
+The keyboard on Typewrt mark I was implemented on a low power STM32
+microcontroller, working in interrupt mode and sleeping most of the time, and
+sending via uart events. Typewrt mark II is just one microcontroller, doing
+exactly the same task as for the keyboard, but for the whole firmware. 
+The display vcom signal is hardware produced with the timer, so no task is
+needed for the display when the system is idle.
+Check the power consumption folder for real measurements.
+Machine idle is around 1.4 mA, typing costs 38 mA, and deep sleep 340 uA.
+
+![power](firmware/power_measurements/normal_typing_light_sleep_toggling.png)
 
 # Vi at a glance:
 
@@ -85,9 +105,11 @@ were you would spend considerable part of your time rearranging pieces of text
 or modifying functions or variables. For writing fiction I find it equally
 useful.  The navigation, or movements, are the first step departing from your
 standard, plain editor. The left, right, up and down cursor movements in vi are
-arranged in the main keyboard row as h,j,k,l for left, down, up and right. If
-you get used to this, you wont miss again the arrow keys.  You can move forward
-or backwards by words, paragraphs, programmed marks, entire documents/buffers.
+arranged in the main keyboard row as h,j,k,l for left, down, up and right. 
+That is the main reason you would't need arrow keys in a vi text editor. 
+If you get used to this, you wont miss again the arrow keys.  You can move
+forward or backwards by words, paragraphs, programmed marks, entire
+documents/buffers.
 You can concatenate actions with movements, like delete 5 words backwards, or
 find character <character> 3 times, to say, or copy text til mark <mark>, or
 paste register 1...  Pressing "." in normal mode executes the last instruction
