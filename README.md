@@ -86,7 +86,7 @@ Once you are inside vi, you press "i" to enter insert mode, and you can start
 typing in your document. Many people hate vi just because this initial
 frustration, akwardness responses of the keyboard when you are not in Insert
 mode. This is because vi is very powerful. It has many key bindings, and the
-learning curve is somehow  step. 
+learning curve is somehow step. 
 
 In insert mode, it behaves like the simplest text editor you could imagine. As
 far as you dont escape, pressing the Esc key, you basically insert characters
@@ -111,7 +111,7 @@ If you get used to this, you wont miss again the arrow keys.  You can move
 forward or backwards by words, paragraphs, programmed marks, entire
 documents/buffers.
 You can concatenate actions with movements, like delete 5 words backwards, or
-find character <character> 3 times, to say, or copy text til mark <mark>, or
+find character <character> 3 times, to say, or copy text til mark, or
 paste register 1...  Pressing "." in normal mode executes the last instruction
 again. For example "dB" to delete backwards  to the begining of a word
 (including punctuation). Then pressing "." will continue to delete that way.
