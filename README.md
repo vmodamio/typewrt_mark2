@@ -150,3 +150,6 @@ The VGA font is borrowed from the ZAP group, Australia (Copyright (C) 2004–26,
 The font used for the splash screen is MomoTrustDisplay-Regular.ttf (Google fonts) 
 designed by Type Associates, Copyright 2024 The MoMo Trust Display Project Authors. 
 
+# License:
+This project is distributed under GPL3 license. Copyright (C) 2026 Victor Modamio
+
