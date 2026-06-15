@@ -52,6 +52,34 @@ The interaction with Typewrt-2 is straight. There is no loggins or shells or
 passwords. You press the power button and start writing instant on a blank 
 document.
 
+# How to:
+Because the esp firmware is a submodule repository, clone this project as 
+``` 
+git clone --recurse-submodules https://github.com/vmodamio/typewrt_mark2.git 
+```
+The building process might be a long project. Please dont hesitate to ask if you
+find difficulties and/or lack of documentation. 
+For flashing the firmware, you need the Espressiff IDF installed in your computer.
+You can follow [the instructions here for the v6.0](https://docs.espressif.com/projects/esp-idf/en/v6.0.1/esp32s3/get-started/index.html)
+Once installed, from the /firmware/esp folder:
+``` 
+idf.py build
+idf.py flash
+```
+
+# Firmware:
+The text editor has been forked from the [fantastic nextVi](https://github.com/kyx0r/nextvi) 
+text editor by Kyryl Melekhin. The editor, originally a terminal program, has been 
+adapted to an embedded firmware using the Espressiff IDF, and it runs under FreeRTOS. 
+Regarding functionality, the original right-to-left support, all the syntax highlight and 
+filetype code, as well as all shell/terminal related code has been removed. 
+The program has been adapted to a non-terminal environment, with a custom
+keyboard and display interpretation. Additionally, all the functionality related to
+files, paths or filesystem in general, has been derived to a more-dedicated filebrowser. 
+The filebrowser is in fact the place where you land with the former quit command. 
+A battery, memmory and date/time status has been added, as well as a BLE small protocol 
+to transfer files.  And last, an special hard-wrap mechanism has been implemented.  
+
 ![hardware](images/PXL_20260515_160559986.jpg)
 # Hardware:
 The machine consists on a feather ESP32s3[d] (unexpected maker) and an Adafruit
@@ -116,4 +144,9 @@ paste register 1...  Pressing "." in normal mode executes the last instruction
 again. For example "dB" to delete backwards  to the begining of a word
 (including punctuation). Then pressing "." will continue to delete that way.
 
+# Credits:
+The text editor is based on the nextVI project (please refer to the firmware folder).
+The VGA font is borrowed from the ZAP group, Australia (Copyright (C) 2004–26, John Zaitseff).
+The font used for the splash screen is MomoTrustDisplay-Regular.ttf (Google fonts) 
+designed by Type Associates, Copyright 2024 The MoMo Trust Display Project Authors. 
 
